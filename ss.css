@@ -1,0 +1,55 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+.maydon{ 
+    z-index: 1; 
+    position: relative; 
+    height: 100vh; 
+    background: #deb887; 
+} 
+.runner { 
+    width: 50px; 
+    height: 50px; 
+    background: #fff; 
+    border-radius: 50%; 
+    position: absolute; 
+    z-index: 3; 
+    bottom: 50px; 
+    left: 50px; 
+} 
+.daraq { 
+    width: 30px; 
+    height: 90px; 
+    background: rgb(115, 255, 1); 
+    position: absolute; 
+    z-index: 3; 
+    bottom: 50px; 
+    left: 350px; 
+} 
+.daraq:nth-child(2){ 
+    left: 750px; 
+} 
+.daraq:nth-child(3){ 
+    left: 1050px; 
+} 
+.maydoncha { 
+    width: 1000%; 
+    bottom: 0; 
+    position: absolute; 
+    height: 20vh; 
+    z-index: 2; 
+    background: #d2691e; 
+    animation-name: daraqlar; 
+    animation-duration: 20s; 
+    animation-iteration-count: infinite; 
+} 
+@keyframes daraqlar { 
+    from{ 
+        transform: translateX(0); 
+    } 
+    to{ 
+        transform: translateX(-50%); 
+      } 
+}
